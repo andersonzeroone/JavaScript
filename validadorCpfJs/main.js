@@ -31,13 +31,13 @@
 
     let cpfAr=cpfArray;
 
-    let primeiroDigitoVerfi = cpfAr[9];
-    let primeiraVerificacao =  verificarDigitoVerificador(calcularDigit(10,cpfAr),primeiroDigitoVerfi);
+    let primeiroDv = cpfAr[9];
+    let primeiraVerificacao =  verificarDv(calDigito(10,cpfAr),primeiroDv);
     
     if(primeiraVerificacao === true){
 
-      let segundoDigitoVerfi = cpfAr[10];
-      let segundaVerificacao =  verificarDigitoVerificador(calcularDigit(11,cpfAr),segundoDigitoVerfi);
+      let segundoDv = cpfAr[10];
+      let segundaVerificacao =  verificarDv(calDigito(11,cpfAr),segundoDv);
   
       segundaVerificacao === true ? document.getElementById("messege").innerHTML = `CPF valido!`:  
                                     document.getElementById("messege").innerHTML = `CPF Invalido!`             
@@ -47,12 +47,12 @@
     }
   }
 
-  function calcularDigit(quantIndice,cpfArr){
+  function calDigito(indice,cpfAr){
     let digito = 0;
     let soma = 0;
   
-    for(i=quantIndice; i>=2; i--){
-      soma = soma + (cpfArr[digito] * i);
+    for(i=indice; i>=2; i--){
+      soma = soma + (cpfAr[digito] * i);
       digito++
     }
 
@@ -61,7 +61,7 @@
   
   }
 
-  function verificarDigitoVerificador(resto,digitoVerificador){
+  function verificarDv(resto,digitoVerificador){
      console.log(`fora do  if ${resto}`);
 
       if(resto === 10 || resto ===11){
