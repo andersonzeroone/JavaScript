@@ -13,7 +13,7 @@
 
       validarCpf(cpfInArray(cpf));
     }
-      console.log(`cpf:${cpf}`)
+
 }
 
   function cpfInArray(cpf){
