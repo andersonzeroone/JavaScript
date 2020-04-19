@@ -62,13 +62,8 @@
   }
 
   function verificarDv(resto,digitoVerificador){
-     console.log(`fora do  if ${resto}`);
-
-      if(resto === 10 || resto ===11){
-         resto = 0;
-         return resto === digitoVerificador ? true : false
-      }
-        return resto === digitoVerificador ? true : false 
+      if(resto === 10 || resto ===11) resto = 0;
+      return resto === digitoVerificador ? true : false 
   }
   
 let apagar = () => {
