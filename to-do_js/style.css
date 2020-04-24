@@ -65,8 +65,7 @@ ul li:hover {
     
   }
 
-
-  ul li.checked {
+ ul li.checked {
     background: #888;
     text-decoration: line-through;
   }
