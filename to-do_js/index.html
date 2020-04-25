@@ -6,13 +6,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>To-do.js</title>
 </head>
-<body>  
-    <div id="app">
+<body> 
+    <div class="header">
         <h1 class="title">TO-DO js</h1>
-        <div class="conteiner">
+        <input id="switch" type="checkbox" name="theme">
+        <label for="switch">Toggle</label>
+    </div>
+    <div id="app">
+       <div class="conteiner">
             <div class="conteiner-input-bnt">
                 <input class="input" type="text" placeholder="Digite sua tarefa">
-                <button onclick="addTodo()">addd</button>     
+                <button onclick="addTodo()">add</button>     
             </div>
         <div class="list">
             <ul>
@@ -21,8 +25,7 @@
             </ul>
             
         </div>
-       
-    </div>
+      </div>
     </div>
     <script src="main.js"></script>
 </body>

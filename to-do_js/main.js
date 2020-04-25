@@ -1,5 +1,3 @@
-const  trashB = src = './imgs/'
-
 var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
@@ -30,16 +28,6 @@ function renderTodos(){
 
 renderTodos();
 
-function verificar(){
-    var text = inputElement.value;
-    if(text == '') alert('Preencha com uma atividade')
-
-    for(let i=0; i < todos.length; i++){
-         text == todos[i]?alert('Já existe'): addTodo()
-    }
-
-}
-
 function addTodo(){
     var todoText = inputElement.value;
   
@@ -56,8 +44,7 @@ function deleteTodo(pos){
     saveToStorage()
 }
 
-function saveToStorage(){
-    
+function saveToStorage(){  
     localStorage.setItem('list_todos', JSON.stringify(todos));
 }
 
@@ -67,3 +54,40 @@ list.addEventListener('click', function(ev) {
      ev.target.classList.toggle('checked');
     }
 }, false);
+
+const html = document.querySelector("html");
+const checkbox = document.querySelector("#switch");
+
+const getStyle = (element, style) => 
+    window
+        .getComputedStyle(element)
+        .getPropertyValue(style) 
+
+const initialColor = {
+    bgg: getStyle(html, "--bgg"),
+    bgTitle: getStyle(html, "--bg-title"),
+    bgBnt: getStyle(html, "--bg-bnt"),
+    bgBntcheck: getStyle(html, "--bg-bntcheck")
+    
+}
+
+const darkMode = {
+    bgg: '#1d1c1c',
+    bgTitle: '#EBEBEB',
+    bgBntcheck:'#3664FF'
+
+
+}
+
+const transformKey = key => 
+    "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
+
+const changeColors = (colors) => {
+    Object.keys(colors).map( key =>
+        html.style.setProperty(transformKey(key), colors[key])
+    )
+}
+
+checkbox.addEventListener("change", ({target}) => {
+    target.checked ? changeColors(darkMode) : changeColors(initialColor)
+})
