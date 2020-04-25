@@ -28,9 +28,11 @@ body{
     font-weight: bold;
     color: var(--bg-title)     
 }
-#switch{
+.bnt-check{
     position: absolute;
-   padding: -12px 0px 0px 0px;
+    float: right;
+    right: 3%;
+    top: 6%
 }
 input[type=checkbox]{
     height: 0;

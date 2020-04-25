@@ -17,8 +17,7 @@ const initialColor = {
     bgg: getStyle(html, "--bgg"),
     bgTitle: getStyle(html, "--bg-title"),
     bgBnt: getStyle(html, "--bg-bnt"),
-    bgBntcheck: getStyle(html, "--bg-bntcheck")
-    
+    bgBntcheck: getStyle(html, "--bg-bntcheck")   
 }
 
 const darkMode = {
@@ -26,8 +25,6 @@ const darkMode = {
     bgTitle: '#EBEBEB',
     bgBnt:'#1d1c1c',    
     bgBntcheck:'#3664FF'
-
-
 }
 
 const transformKey = key => 
