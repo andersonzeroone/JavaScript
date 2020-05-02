@@ -57,12 +57,6 @@ server.post("/", function(req, res){
   
 });
 
-
-function renderTodos(todos){
-    
-}
-
-
 function deleteTodo(){
 
     renderTodos()
