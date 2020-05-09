@@ -1,13 +1,13 @@
 webpack  
 
-O webpack √© usado para empacotar modulos est√°ticos, gerando um mapeamento dos modulos e dependencias podendo gerar um ou mais pacotes. Em resumo, um projeto que existem diversos arquivos .js, .css √© poss√≠vel unir esses modulos, ou em projetos maiores divide esses modulos e no final passam a ser um s√≥.
+O webpack È usado para empacotar modulos est·ticos, gerando um mapeamento dos modulos e dependencias podendo gerar um ou mais pacotes. Em resumo, um projeto que existem diversos arquivos .js, .css È possÌvel unir esses modulos, ou em projetos maiores divide esses modulos e no final passam a ser um sÛ.
 
 
-O webpack posso a seguinte estrutura b√°sica.
+O webpack posso a seguinte estrutura b·sica.
 
 Entrey
 
-Indica qual m√≥dulo o webpack deve usar para iniciar em seguida busca as depend√™mcias  e faz a importa√ß√£o. Normalmente o ponto de entrada  √© definido no ./src/main.js, mas √© poss√≠vel definir um arquivo diferente e at√© emsmo v√°rios pontos de entradas fazendo sua configura√ß√£o no webpack.config.js.
+Indica qual mÛdulo o webpack deve usar para iniciar em seguida busca as dependÍmcias  e faz a importaÁ„o. Normalmente o ponto de entrada  È definido no ./src/main.js, mas È possÌvel definir um arquivo diferente e atÈ emsmo v·rios pontos de entradas fazendo sua configuraÁ„o no webpack.config.js.
 
 ```css
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
 ```
 Output
 
-Output define o nome e local  onde ser√°  gerado  o pacote pelo webpack.  Para configurar, devemos definir um objeto output com as propriedades path  e filename no arquivo de configura√ß√£o do webpack:
+Output define o nome e local  onde ser·  gerado  o pacote pelo webpack.  Para configurar, devemos definir um objeto output com as propriedades path  e filename no arquivo de configuraÁ„o do webpack:
 ```css
 module.exports = {
 	entry: './src/main.js',
@@ -28,12 +28,12 @@ module.exports = {
 ```
 
 
-Essa congigura√ß√£o ir√° um arquivo bundle.js , A propriedade  path   indica onde o arquivo ser√° criado , o __dirname  vari√°vel do nodejs cont√©m o nome do diret?io onse se encontra o m√≥dulo atual.
-e filename  o nome do arquivo que ser√° gerado.
+Essa congiguraÁ„o ir· um arquivo bundle.js , A propriedade  path   indica onde o arquivo ser· criado , o __dirname  vari·vel do nodejs contÈm o nome do diret?io onse se encontra o mÛdulo atual.
+e filename  o nome do arquivo que ser· gerado.
 
 Loaders
 
-O Loaders √© usadado para que ele possa entender outros tipos de arquivos  Loaders que s√£o m√≥dulos que podem ser instalados separadamente possibilitando que o webpack converta esses arquivos em m√≥dulos v√°lidos e os adicione ao gr√°fico de depend√™ncia. Os Loaders tamb√©m s√£o utilizados para converter JavaScript de uma vers√£o para outra. Para incluirmos os Loaders criamos uma nova se√ß√£o module no arquivo de configura√ß√£o, nessa se√ß√£o podemos definir uma ou mais rules
+O Loaders È usadado para que ele possa entender outros tipos de arquivos  Loaders que s„o mÛdulos que podem ser instalados separadamente possibilitando que o webpack converta esses arquivos em mÛdulos v·lidos e os adicione ao gr·fico de dependÍncia. Os Loaders tambÈm s„o utilizados para converter JavaScript de uma vers„o para outra. Para incluirmos os Loaders criamos uma nova seÁ„o module no arquivo de configuraÁ„o, nessa seÁ„o podemos definir uma ou mais rules
 
 ```css
 module:{
@@ -79,8 +79,6 @@ module.exports = {
 
 Fontes:
 https://webpack.js.org/
-
-
 https://medium.com/rocketseat/entendendo-e-dominando-o-webpack-4b2e8b3e02da
 
 
