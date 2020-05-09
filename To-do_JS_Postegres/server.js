@@ -57,4 +57,6 @@ server.post("/", function(req, res){
   
 });
 
-
+server.delete("/", function(req, res){
+    
+})
