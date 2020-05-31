@@ -132,8 +132,8 @@ button[disabled=disabled], button:disabled {
 .campo-invalido{
 	border: 1px solid red;
 }
-#mensagens-erro {
-    color: red;
+#mensagem-erro{
+	color: red;
 }
 .paciente-invalido{
 	background-color: lightcoral;
