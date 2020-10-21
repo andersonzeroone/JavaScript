@@ -1,5 +1,5 @@
 const pilotos = ['vettel', 'Aloson', 'Raikonen', 'massa'];
-pilotos.pop() // remoce o ultimo elemento;
+pilotos.pop() // remove o ultimo elemento;
 console.log(` POP : ${pilotos}`);
 
 pilotos.push('vertappen'); //add na ultima posição
@@ -23,5 +23,5 @@ console.log(` REMOVENDO COM SPLICE : ${pilotos}`);
 //SLICE permite criar um novo array a partir de outro array
 //informando  para o novo array quais posição vai copiar do antigo array
 
-const algunsPilotos = pilotos.slice(2);// o novo array irá ter os elemtos do array anterios comencando da posição 2 
+const algunsPilotos = pilotos.slice(2);// o novo array irá ter os elemtos do array anterior comencando da posição 2 
 console.log(` slice : ${algunsPilotos}`);
